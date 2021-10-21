@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Roboto/roboto-regular-webfont.woff2);
+}
+@font-face {
+  font-family: "roboto";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Roboto/roboto-bold-webfont.woff2);
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  margin: 30px 20%;
+  max-width: 935px;
+}
+.main__phones {
+  width: 440px;
+  height: 410px;
+}
+.main__picture img {
+  width: 450px;
+  height: 600px;
+}
+.main .form {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  margin-top: 27px;
+}
+.main .form__heading {
+  font-size: 40px;
+  font-family: "roboto", sans-serif;
+  margin: 30px 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+.main .form__email {
+  width: 258px;
+  height: 36px;
+  display: block;
+  margin: 0 35px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 0px 7px;
+  border-radius: 5px;
+  color: #fafafa;
+}
+.main .form__password {
+  width: 258px;
+  height: 36px;
+  display: block;
+  margin: 7px 35px 15px 35px;
+  background-color: #fafafa;
+  padding: 0px 7px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  color: #fafafa;
+}
+.main .form__button {
+  width: 274px;
+  height: 30px;
+  display: block;
+  margin: 7px 35px;
+  color: #fff;
+  background-color: #0095f6;
+  border-radius: 5px;
+  border: transparent;
+  font-weight: bold;
+}
+.main .form__border {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+.main .form__border:before, .main .form__border::after {
+  content: "────────";
+  color: #dbdbdb;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.main .form__enter {
+  margin-top: 20px;
+}
+.main .form__facebook {
+  color: #385185;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.main .form__forgot-password {
+  color: #385185;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .new-acc-register {
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  margin-top: 27px;
+  padding: 20px;
+  font-size: 13px;
+}
+.main .new-acc-register .register {
+  text-transform: capitalize;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.main .install__app {
+  margin-top: 25px;
+}
+.main .install__app .install__heading p {
+  font-size: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #262626;
+  margin-bottom: 25px;
+}
+.main .install__app .install__pictures {
+  display: flex;
+  justify-content: center;
+}
+.main .install__app .install__apple img {
+  width: 136px;
+  height: 40px;
+}
+.main .install__app .install__googleplay img {
+  width: 136px;
+  height: 40px;
+  margin-left: 10px;
+}/*# sourceMappingURL=styles.css.map */
