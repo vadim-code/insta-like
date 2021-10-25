@@ -20,27 +20,66 @@ body {
   margin: 30px 20%;
   max-width: 935px;
 }
+
 .main__phones {
   width: 440px;
   height: 410px;
+  position: relative;
 }
+
+.images-container {
+  position: absolute;
+  top: 47px;
+  left: 75px;
+  height: 419px;
+  width: 239px;
+}
+
+.images-containerr {
+  position: absolute;
+  top: 47px;
+  left: 75px;
+  height: 419px;
+  width: 239px;
+}
+
+.common-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit !important;
+  width: inherit !important;
+  opacity: 0;
+}
+
+.active-image {
+  opacity: 1;
+}
+
 .main__picture img {
   width: 450px;
   height: 600px;
 }
-.main .form {
+
+.global-form {
+  box-sizing: border-box;
+}
+
+.form {
   border: 1px solid #dbdbdb;
   border-radius: 1px;
   margin-top: 27px;
 }
-.main .form__heading {
+
+.form__heading {
   font-size: 40px;
   font-family: "roboto", sans-serif;
   margin: 30px 0;
   text-transform: capitalize;
   text-align: center;
 }
-.main .form__email {
+
+.form__email {
   width: 258px;
   height: 36px;
   display: block;
@@ -51,29 +90,32 @@ body {
   border-radius: 5px;
   color: #fafafa;
 }
-.main .form__password {
+
+.form__password {
   width: 258px;
   height: 36px;
+  padding: 0px 7px;
   display: block;
   margin: 7px 35px 15px 35px;
   background-color: #fafafa;
-  padding: 0px 7px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   color: #fafafa;
 }
-.main .form__button {
+
+.form__button {
   width: 274px;
   height: 30px;
   display: block;
-  margin: 7px 35px;
+  margin: 7px 35px 20px;
   color: #fff;
   background-color: #0095f6;
   border-radius: 5px;
   border: transparent;
   font-weight: bold;
 }
-.main .form__border {
+
+.form__border {
   padding: 10px;
   text-transform: uppercase;
   color: #8e8e8e;
@@ -81,61 +123,69 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.main .form__border:before, .main .form__border::after {
+
+.form__border:before,
+.form__border::after {
   content: "────────";
   color: #dbdbdb;
   padding-left: 18px;
   padding-right: 18px;
 }
-.main .form__enter {
+
+.form__enter {
   margin-top: 20px;
 }
-.main .form__facebook {
+
+.form__facebook {
   color: #385185;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
 }
-.main .form__forgot-password {
+
+.form__forgot-password {
   color: #385185;
   font-size: 12px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.main .new-acc-register {
+
+.new-acc-register {
   border: 1px solid #dbdbdb;
   border-radius: 1px;
   margin-top: 27px;
   padding: 20px;
   font-size: 13px;
 }
-.main .new-acc-register .register {
+
+.register {
   text-transform: capitalize;
   color: #0095f6;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
 }
-.main .install__app {
+
+.install__app {
   margin-top: 25px;
 }
-.main .install__app .install__heading p {
+.install__app .install__heading p {
   font-size: 14px;
   text-align: center;
   text-transform: capitalize;
   color: #262626;
   margin-bottom: 25px;
 }
-.main .install__app .install__pictures {
+.install__app .install__pictures {
   display: flex;
   justify-content: center;
 }
-.main .install__app .install__apple img {
+.install__app .install__apple img {
   width: 136px;
   height: 40px;
 }
-.main .install__app .install__googleplay img {
+.install__app .install__googleplay img {
   width: 136px;
   height: 40px;
   margin-left: 10px;

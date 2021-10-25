@@ -26,11 +26,45 @@ body {
 .main__phones {
   width: 440px;
   height: 410px;
+  position: relative;
+}
+
+.images-container {
+  position: absolute;
+  top: 47px;
+  left: 75px;
+  height: 419px;
+  width: 239px;
+}
+
+.images-containerr {
+  position: absolute;
+  top: 47px;
+  left: 75px;
+  height: 419px;
+  width: 239px;
+}
+
+.common-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit !important;
+  width: inherit !important;
+  opacity: 0;
+}
+
+.active-image {
+  opacity: 1;
 }
 
 .main__picture img {
   width: 450px;
   height: 600px;
+}
+
+.global-form {
+  box-sizing: border-box;
 }
 
 .form {
@@ -62,10 +96,10 @@ body {
 .form__password {
   width: 258px;
   height: 36px;
+  padding: 0px 7px;
   display: block;
   margin: 7px 35px 15px 35px;
   background-color: $light-grey;
-  padding: 0px 7px;
   border: 1px solid $grey;
   border-radius: 5px;
   color: $light-grey;
@@ -75,7 +109,8 @@ body {
   width: 274px;
   height: 30px;
   display: block;
-  margin: 7px 35px;
+  margin: 7px 35px 20px;
+
   color: #fff;
   background-color: $blue;
   border-radius: 5px;
