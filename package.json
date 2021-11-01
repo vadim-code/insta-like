@@ -1,0 +1,27 @@
+{
+  "name": "insta-like",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build:esbuild": "esbuild index.js --bundle --outfile=out.js",
+    "build:webpack": "webpack",
+    "watch:webpack": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadim-code/insta-like.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadim-code/insta-like/issues"
+  },
+  "homepage": "https://github.com/vadim-code/insta-like#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.13.9",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
