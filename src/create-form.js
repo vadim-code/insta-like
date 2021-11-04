@@ -1,5 +1,5 @@
 import { formInputConstructor } from './form-costructor';
-// import { phoneScreensSlideShow } from './phone-section';
+import { router } from '../src/index';
 
 export function createForm() {
   function createGlobalFormWrapper() {
@@ -81,12 +81,10 @@ export function createForm() {
       });
 
       let root = document.getElementById('root');
-      // let hui = phoneScreensSlideShow();
 
       inputs.forEach((input) => {
         if (input.value !== undefined) {
-          root.innerHTML = '';
-          // hui.stop();
+          router.go('home');
         }
       });
 

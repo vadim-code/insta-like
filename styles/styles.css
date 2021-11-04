@@ -1,23 +1,27 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "roboto";
+  font-family: 'roboto';
   font-weight: 400;
   font-style: normal;
   src: url(../fonts/Roboto/roboto-regular-webfont.woff2);
 }
+
 @font-face {
-  font-family: "roboto";
+  font-family: 'roboto';
   font-weight: 700;
   font-style: normal;
   src: url(../fonts/Roboto/roboto-bold-webfont.woff2);
 }
+
 body {
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 30px 20%;
+  margin: 30px auto;
   max-width: 935px;
 }
 
@@ -50,6 +54,7 @@ body {
   height: inherit !important;
   width: inherit !important;
   opacity: 0;
+  -webkit-transition: opacity ease-in 0.3s;
   transition: opacity ease-in 0.3s;
 }
 
@@ -63,7 +68,8 @@ body {
 }
 
 .global-form {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form {
@@ -74,7 +80,7 @@ body {
 
 .form__heading {
   font-size: 40px;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   margin: 30px 0;
   text-transform: capitalize;
   text-align: center;
@@ -127,7 +133,7 @@ body {
 
 .form__border:before,
 .form__border::after {
-  content: "────────";
+  content: '────────';
   color: #dbdbdb;
   padding-left: 18px;
   padding-right: 18px;
@@ -171,6 +177,7 @@ body {
 .install__app {
   margin-top: 25px;
 }
+
 .install__app .install__heading p {
   font-size: 14px;
   text-align: center;
@@ -178,16 +185,24 @@ body {
   color: #262626;
   margin-bottom: 25px;
 }
+
 .install__app .install__pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .install__app .install__apple img {
   width: 136px;
   height: 40px;
 }
+
 .install__app .install__googleplay img {
   width: 136px;
   height: 40px;
   margin-left: 10px;
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

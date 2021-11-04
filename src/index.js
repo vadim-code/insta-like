@@ -1,27 +1,10 @@
-import { createMainSection } from './main-section';
-import { createPhoneSection } from './phone-section';
-import { createForm } from './create-form';
-import { createInstallLinksSection } from './insta-link-block';
+import { createRoute } from './routes/index';
+import { APP_ROUTES } from './routes/routes';
+import { SIGN_IN } from './sign-in';
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  const root = document.getElementById('root');
+export let router = null;
 
-  const mainSection = createMainSection();
-  mainSection.appendChild(createPhoneSection());
-  const form = createForm();
+const root = document.getElementById('root');
+router = createRoute(APP_ROUTES, root);
 
-  form.appendChild(createInstallLinksSection());
-  mainSection.appendChild(form);
-  // root.appendChild(mainSection);
-
-  const controlSystem = {
-    startRegisterPage: function () {
-      return root.appendChild(mainSection);
-    },
-    clearAllContent: function () {
-      return (root.innerHTML = '');
-    },
-  };
-
-  controlSystem.startRegisterPage();
-});
+router.go('sign-in');
