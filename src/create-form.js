@@ -1,4 +1,8 @@
 import { formInputConstructor } from './form-costructor';
+<<<<<<< HEAD
+=======
+import { router } from '../src/index';
+>>>>>>> fb3545e31aa0f33fe0aa5890c05103a47d73adef
 
 export function createForm() {
   function createGlobalFormWrapper() {
@@ -83,7 +87,11 @@ export function createForm() {
 
       inputs.forEach((input) => {
         if (input.value !== undefined) {
+<<<<<<< HEAD
           root.innerHTML = '';
+=======
+          router.go('home');
+>>>>>>> fb3545e31aa0f33fe0aa5890c05103a47d73adef
         }
       });
 

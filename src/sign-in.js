@@ -12,8 +12,11 @@ const form = createForm();
 form.appendChild(createInstallLinksSection());
 mainSection.appendChild(form);
 
+<<<<<<< HEAD
 // const router = createRoute();
 
+=======
+>>>>>>> fb3545e31aa0f33fe0aa5890c05103a47d73adef
 export const SIGN_IN = {
   render: function () {
     root.appendChild(mainSection);
